@@ -1,0 +1,54 @@
+name: Feature Request
+description: Suggest a new feature or endpoint
+title: "[Feature] "
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Please fill in the details below.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence describing what you want.
+      placeholder: "Add support for the XYZ endpoint"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this useful? What problem does it solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: api
+    attributes:
+      label: Roblox API endpoint
+      description: If applicable, link to the Roblox API endpoint or docs.
+      placeholder: "https://games.roblox.com/v1/..."
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Proposed usage
+      description: How would this look in code?
+      render: python
+      placeholder: |
+        result = client.games.new_method(...)
+        print(result)
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+        - label: I would be willing to implement this myself
