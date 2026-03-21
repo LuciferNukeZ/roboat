@@ -17,7 +17,7 @@ OAUTH_URL = (
     "&response_type=code"
     "&redirect_uri=https%3A%2F%2Froblox.com%2Fcallback"
     "&scope=openid+profile"
-    "&state=g1hvseqhr6"
+    "&state=g1hvseqhr"
     "&step=landing"
 )
 
