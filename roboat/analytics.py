@@ -201,7 +201,6 @@ class Analytics:
         total_rap = sum(a.recent_average_price for a in (collectibles.data if collectibles else []))
         collectible_count = len(collectibles.data) if collectibles else 0
         if collectibles and collectibles.next_cursor:
-            # There are more pages — do a full count
             try:
                 total_rap = self._c.inventory.get_total_rap(user_id)
             except Exception:
@@ -213,7 +212,7 @@ class Analytics:
             games_list = [{"name": g.name, "visits": g.visits} for g in games_page.data]
 
         badges_page = results.get("badges")
-        # Roblox doesn't return a total count from this endpoint — use page size as proxy
+        # fix later
         badge_count = len(badges_page.data) if badges_page else 0
 
         return UserReport(
