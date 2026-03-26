@@ -27,9 +27,9 @@
 </div>
 
 ```bash
-pip install roboat
-pip install "roboat[async]"   # async support via aiohttp
-pip install "roboat[all]"     # everything + test tools
+pip install roboat-utils
+pip install "roboat-utils[async]"   # async support via aiohttp
+pip install "roboat-utils[all]"     # everything + test tools
 ```
 
 ---
