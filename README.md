@@ -1,20 +1,22 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E3342F,100:991B1B&height=220&section=header&text=roboat&fontSize=90&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=The%20Best%20Python%20Wrapper%20for%20the%20Roblox%20API&descAlignY=62&descAlign=50&descColor=ffffff" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:1E3A8A&height=220&section=header&text=robase&fontSize=90&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=The%20Most%20Powerful%20Python%20SDK%20for%20the%20Roblox%20API&descAlignY=62&descAlign=50&descColor=ffffff" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=800&color=E3342F&center=true&vCenter=true&width=650&lines=OAuth+2.0+%E2%80%94+No+Cookie+Required;Typed+Models+for+Every+API+Response;Async+%2B+Sync+Clients+Built+In;SQLite+Database+Layer+Included;Open+Cloud+%2B+DataStore+Support;Real-time+Event+System;Marketplace+%26+RAP+Tracking+Tools;Interactive+Terminal+REPL;Production+Ready+%F0%9F%9A%80" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=800&color=2563EB&center=true&vCenter=true&width=700&lines=robase+%E2%80%94+Built+for+Roblox+Developers;OAuth+2.0+%E2%80%94+No+Cookie+Required;Typed+Models+for+Every+API+Response;Async+%2B+Sync+Clients+Built+In;SQLite+Database+Layer+Included;Open+Cloud+%2B+DataStore+Support;Real-time+Event+System;Marketplace+%26+RAP+Tracking+Tools;Interactive+Terminal+REPL;Production+Ready+%F0%9F%9A%80" alt="Typing SVG" />
 
 <br/><br/>
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-E3342F?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-991B1B?style=for-the-badge)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-2.1.0-E3342F?style=for-the-badge)](https://github.com/Addi9000/roboat)
-[![Website](https://img.shields.io/badge/Website-roboat.pro-991B1B?style=for-the-badge&logo=google-chrome&logoColor=white)](https://roboat.pro)
-[![Stars](https://img.shields.io/github/stars/Addi9000/roboat?style=for-the-badge&color=E3342F&logo=github)](https://github.com/Addi9000/roboat/stargazers)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-2563EB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-1E3A8A?style=for-the-badge)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-2.1.0-2563EB?style=for-the-badge)](https://github.com/Addi9000/robase)
+[![Website](https://img.shields.io/badge/Website-robase.pro-1E3A8A?style=for-the-badge&logo=google-chrome&logoColor=white)](https://robase.pro)
+[![Stars](https://img.shields.io/github/stars/Addi9000/robase?style=for-the-badge&color=2563EB&logo=github)](https://github.com/Addi9000/robase/stargazers)
 
 <br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&pause=2000&color=60A5FA&center=true&vCenter=true&width=700&lines=pip+install+robase-utilities" alt="Install SVG" />
 
 </div>
 
@@ -27,9 +29,9 @@
 </div>
 
 ```bash
-pip install roboat-utils
-pip install "roboat-utils[async]"   # async support via aiohttp
-pip install "roboat-utils[all]"     # everything + test tools
+pip install robase-utilities
+pip install "robase-utilities[async]"   # async support via aiohttp
+pip install "robase-utilities[all]"     # everything + test tools
 ```
 
 ---
@@ -41,9 +43,9 @@ pip install "roboat-utils[all]"     # everything + test tools
 </div>
 
 ```python
-from roboat import RoboatClient
+from robase import RobaseClient
 
-client = RoboatClient()
+client = RobaseClient()
 
 # User lookup
 user = client.users.get_user(156)
@@ -69,18 +71,18 @@ for item in items:
 </div>
 
 ```bash
-roboat
-# or: python -m roboat
+robase
+# or: python -m robase
 ```
 
 ```
-  ____       _     _            _    ____ ___
- |  _ \ ___ | |__ | | _____  __/ \  |  _ \_ _|
- | |_) / _ \| '_ \| |/ _ \ \/ / _ \ | |_) | |
- |  _ < (_) | |_) | | (_) >  < ___ \|  __/| |
- |_| \_\___/|_.__/|_|\___/_/\_/_/  \_|_|  |___|
+  ____       _                    
+ |  _ \ ___ | |__   __ _ ___  ___ 
+ | |_) / _ \| '_ \ / _` / __|/ _ \
+ |  _ < (_) | |_) | (_| \__ \  __/
+ |_| \_\___/|_.__/ \__,_|___/\___|
 
-  roboat v2.1.0  —  roboat.pro  —  type 'help' to begin
+  robase v2.1.0  —  robase.pro  —  type 'help' to begin
 
 » start 156
 » auth
@@ -99,10 +101,10 @@ roboat
 
 </div>
 
-roboat uses **Roblox OAuth 2.0** — no cookie extraction, no browser DevTools.
+robase uses **Roblox OAuth 2.0** — no cookie extraction, no browser DevTools.
 
 ```python
-from roboat import OAuthManager, RoboatClient
+from robase import OAuthManager, RobaseClient
 
 manager = OAuthManager(
     on_success=lambda token: print("✅ Authenticated!"),
@@ -113,7 +115,7 @@ manager = OAuthManager(
 token = manager.authenticate()   # opens browser, 120s countdown
 
 if token:
-    client = RoboatClient(oauth_token=token)
+    client = RobaseClient(oauth_token=token)
     print(f"Logged in as {client.username()}")
 ```
 
@@ -128,8 +130,8 @@ In the terminal, type `auth`. A browser window opens, you log in, and you're don
 </div>
 
 ```
-roboat/
-├── roboat/              Source package (35 modules)
+robase/
+├── robase/              Source package (35 modules)
 │   ├── utils/           Cache, rate limiter, paginator
 │   └── *.py             All API modules
 ├── examples/            8 ready-to-run example scripts
@@ -151,13 +153,13 @@ roboat/
 
 </div>
 
-### Sync — `RoboatClient`
+### Sync — `RobaseClient`
 
 ```python
-from roboat import RoboatClient, ClientBuilder
+from robase import RobaseClient, ClientBuilder
 
 # Simple
-client = RoboatClient()
+client = RobaseClient()
 
 # Builder — full control
 client = (
@@ -171,14 +173,14 @@ client = (
 )
 ```
 
-### Async — `AsyncRoboatClient`
+### Async — `AsyncRobaseClient`
 
 ```python
 import asyncio
-from roboat import AsyncRoboatClient
+from robase import AsyncRobaseClient
 
 async def main():
-    async with AsyncRoboatClient() as client:
+    async with AsyncRobaseClient() as client:
 
         # Parallel fetch — all at once
         game, votes, icons = await asyncio.gather(
@@ -194,12 +196,12 @@ async def main():
 asyncio.run(main())
 ```
 
-### Open Cloud — `RoboatCloudClient`
+### Open Cloud — `RobaseCloudClient`
 
 ```python
-from roboat import RoboatCloudClient
+from robase import RobaseCloudClient
 
-cloud = RoboatCloudClient(api_key="roblox-KEY-xxxxx")
+cloud = RobaseCloudClient(api_key="roblox-KEY-xxxxx")
 cloud.datastores.set(universe_id, "PlayerData", "player_1", {"coins": 500})
 ```
 
@@ -307,7 +309,7 @@ client.groups.pay_out(7, user_id=1234, amount=500)
 </div>
 
 ```python
-from roboat.marketplace import MarketplaceAPI
+from robase.marketplace import MarketplaceAPI
 
 market = MarketplaceAPI(client)
 
@@ -339,7 +341,7 @@ print(tracker.summary())
 </div>
 
 ```python
-from roboat.social import SocialGraph
+from robase.social import SocialGraph
 
 sg = SocialGraph(client)
 
@@ -392,7 +394,7 @@ client.develop.unban_user(UNIVERSE, 1234, API_KEY)
 </div>
 
 ```python
-from roboat import SessionDatabase
+from robase import SessionDatabase
 
 db = SessionDatabase.load_or_create("myproject")
 
@@ -416,7 +418,7 @@ db.close()
 </div>
 
 ```python
-from roboat import EventPoller
+from robase import EventPoller
 
 poller = EventPoller(client, interval=30)
 
@@ -486,11 +488,11 @@ python scripts/generate_stub.py
 </div>
 
 ```python
-from roboat import (
+from robase import (
     UserNotFoundError, GameNotFoundError,
-    RateLimitedError, NotAuthenticatedError, RoboatAPIError,
+    RateLimitedError, NotAuthenticatedError, RobaseAPIError,
 )
-from roboat.utils import retry
+from robase.utils import retry
 
 @retry(max_attempts=3, backoff=2.0)
 def safe_get(user_id):
@@ -504,7 +506,7 @@ except RateLimitedError:
     print("Rate limited")
 except NotAuthenticatedError:
     print("Need OAuth token")
-except RoboatAPIError as e:
+except RobaseAPIError as e:
     print(f"API error: {e}")
 ```
 
@@ -517,7 +519,7 @@ except RoboatAPIError as e:
 </div>
 
 ```python
-from roboat.utils import Paginator
+from robase.utils import Paginator
 
 # Lazily iterate ALL followers — auto-fetches every page
 for follower in Paginator(
@@ -580,7 +582,7 @@ top_500 = Paginator(
 ```
 MIT License
 
-Copyright (c) 2024 roboat contributors
+Copyright (c) 2024 robase contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -603,9 +605,9 @@ Full license: [LICENSE](LICENSE)
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:991B1B,100:E3342F&height=140&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E3A8A,100:2563EB&height=140&section=footer" width="100%"/>
 
-**[roboat.pro](https://roboat.pro)** &nbsp;·&nbsp; **[GitHub](https://github.com/Addi9000/roboat)** &nbsp;·&nbsp; **[Issues](https://github.com/Addi9000/roboat/issues)**
+**[robase.pro](https://robase.pro)** &nbsp;·&nbsp; **[GitHub](https://github.com/Addi9000/robase)** &nbsp;·&nbsp; **[Issues](https://github.com/Addi9000/robase/issues)**
 
 *Built with ❤️ for the Roblox developer community*
 
